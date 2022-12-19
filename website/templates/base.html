@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>{% block title %}Title{% endblock %}</title>
+    <link rel="stylesheet" href="static/base.css">
+</head>
+<body>
+
+    <div class="menu">
+        <div class="left-part-menu">
+            <ul>
+                <li><a id="home" href="/home">Početna stranica</a></li>
+                <li><a id="omeni" href="/omeni">O meni&#9660;</a>
+                    <ul class="dropdown">
+                        <li><a id="cv" href="/cv">CV</a></li>
+                        <li><a id="mpismo" href="/mpismo">Motivaciono pismo</a></li>
+                        <li><a id="linkedin" href="linkedin">Linkedin profil</a></li>
+                        <li><a id="youtube" href="youtube">Youtube profil</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="middle-part-menu">
+            <a href="http://127.0.0.1:5000/youtube">
+            <img class="logo" src="static/the-ball-game-logo.jpg">
+            </a>
+
+        </div>
+        <div class="right-part-menu">
+            <ul>
+                <li><a id="signUp"href="/sign-up">Registrujte se</a></li>
+                <li><a id="login"href="/login">Prijavite se</a></li>
+                <li><a id="logout" href="/logout">Odlogujte se</a></li>
+            </ul>
+        </div>
+    </div>
+    {% block content %}
+
+    {% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+
+<link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}"
+
+{% extends "base.html"%}
+{% block content %}
+    <div class="prijava">
+         <div class="prijava-text">PRIJAVA</div>
+         <input class="prijava-tab" type="text" placeholder="E-mail">
+         <input class="prijava-tab" type="text" placeholder="Vaša lozinka">
+         <button class="prijava-button">PRIJAVA</button>
+         <div class="nalog">Niste jos registrovani?
+             <a class="uredjivanje-texta" href="/sign-up">Otvorite nalog</div>
+    </div>
+{% endblock %}
+
+
