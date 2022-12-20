@@ -3,13 +3,19 @@
 
 {% extends "base.html"%}
 {% block content %}
+    <div>
+        <button class="logout-button">
+            <img  class="logout-icon" src="static/logout-icon.png">
+
+        </button>
+    </div>
     <div class="prijava">
          <div class="prijava-text">PRIJAVA</div>
          <input class="prijava-tab" type="text" placeholder="E-mail">
          <input class="prijava-tab" type="text" placeholder="Vaša lozinka">
          <button class="prijava-button">PRIJAVA</button>
          <div class="nalog">Niste jos registrovani?
-             <a class="uredjivanje-texta" href="/sign-up">Otvorite nalog</div>
+             <a class="uredjivanje-texta" href="/register">Otvorite nalog</div>
     </div>
 {% endblock %}
 

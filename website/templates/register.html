@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='register.css') }}"
+
+{% extends 'base.html' %}
+{% block content %}
+
+
+</div>
+     <div class="registracija">
+         <div class="prijava-text">REGISTRACIJA</div>
+         <input class="prijava-tab" type="text" placeholder="Ime">
+         <input class="prijava-tab" type="text" placeholder="Prezime">
+         <input class="prijava-tab" type="text" placeholder="E-mail">
+         <input class="prijava-tab" type="text" placeholder="Vaša lozinka">
+         <button class="prijava-button">REGISTRUJTE SE</button>
+         <div class="nalog">Već imate nalog?
+             <a class="uredjivanje-texta" href="/login">Prijavite se</div>
+    </div>
+{% endblock %}

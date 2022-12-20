@@ -17,7 +17,7 @@
     background-color: rgb(255, 77, 77);
 }
 .middle-part-menu{
-    padding: 7px 0 3px;
+    padding: 5px 0 5px;
     margin:0;
     align-items: center;
 }
@@ -37,6 +37,12 @@
     align-items: center;
     color: white;
     text-transform: uppercase;
+}
+.right-part-menu{
+    padding-right: 70px;
+}
+.left-part-menu{
+    padding-left: 70px;
 }
 .left-part-menu a:hover,
 .right-part-menu a:hover{
