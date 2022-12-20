@@ -1,0 +1,74 @@
+.page-left-side{
+     display:flex;
+     position:fixed;
+     flex-direction:column;
+     width: 40px;
+     padding-left: 18px;
+     padding-right: 12px;
+     top:68px;
+     left:0;
+     right:0;
+  }
+.home-image,
+.your-videos-image,
+.history-image,
+.movies-image,
+.watch-later-image,
+.music-image{
+    width: 24px;
+    height: 24px;
+    margin-right: 24px;
+
+  }
+.home-button,
+.library-button{
+    border:none;
+    height: 40px;
+    width: 180px;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    background-color:white;
+    cursor:pointer;
+
+  }
+.home-button:hover,
+.library-button:hover{
+    border-radius: 20px;
+    background-color: rgb(240, 240, 240);
+  }
+
+.home-text,
+.history-text,
+.your-videos-text,
+.movies-text,
+.watch-later-text,
+.subs-text,
+.music-text,
+.your-movies-text{
+    font-family: Roboto, Arial;
+    font-size: 14px;
+    color: #0F0F0F;
+  }
+.library-button{
+    margin-top: 25px;
+  }
+.your-videos-image,
+.history-image,
+.watch-later-image,
+.movies-image{
+    width:20px;
+    height:20px;
+    margin-left:4px;
+  }
+.movies-text{
+    margin-left: -4px;
+  }
+.subs-text{
+    margin-left: 8px;
+    margin-top: 18px;
+  }
+.music-image{
+    margin-left:4px;
+    border-radius:12px;
+  }

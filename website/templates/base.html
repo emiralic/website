@@ -14,8 +14,8 @@
                     <ul class="dropdown">
                         <li><a id="cv" href="/cv">CV</a></li>
                         <li><a id="mpismo" href="/mpismo">Motivaciono pismo</a></li>
-                        <li><a id="linkedin" href="linkedin">Linkedin profil</a></li>
-                        <li><a id="youtube" href="youtube">Youtube profil</a></li>
+                        <li><a id="linkedin" href="/linkedin">Linkedin profil</a></li>
+                        <li><a id="youtube" href="/youtube">Youtube profil</a></li>
                     </ul>
                 </li>
             </ul>
@@ -24,7 +24,6 @@
             <a href="http://127.0.0.1:5000/youtube">
             <img class="logo" src="static/the-ball-game-logo.jpg">
             </a>
-
         </div>
         <div class="right-part-menu">
             <ul>
@@ -34,6 +33,27 @@
             </ul>
         </div>
     </div>
+    {% with messages = get_flashed_messages(with_categories=true)%}
+    {% if messages %}
+        {% for category, message in messages %}
+        {% if category == 'error'%}
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                {{message}}
+                <button type="button" class="close" data-dismiss="alert">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        {% else %}
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                {{message}}
+                <button type="button" class="close" data-dismiss="alert">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        {% endif %}
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
     {% block content %}
 
     {% endblock %}

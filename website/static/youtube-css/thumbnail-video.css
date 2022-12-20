@@ -1,0 +1,83 @@
+.video-title-description{
+      display:flex;
+      flex-direction:row;
+      width: 1070px;
+      padding-top: 72px;
+      padding-bottom: 24px;
+      position:relative;
+  }
+.thumbnail{
+    width: 424px;
+    border-radius: 16px;
+  }
+.full-name{
+      font-family: Roboto, Arial;
+      font-size: 14px;
+      color: #0F0F0F;
+      font-weight: 500;
+      width: 400px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      margin-top: 5px;
+      cursor:pointer;
+
+  }
+.text-on-thumbnail{
+    font-family: Roboto, Arial;
+    font-size: 18px;
+    position: absolute;
+    bottom: 230px;
+    color: #EEEEEE;
+    left: 11px;
+    width: 348px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+.youtube-button-thumbnail{
+    position: absolute;
+    width: 70px;
+    left: 170px;
+    bottom: 118px;
+  }
+.views{
+      font-family: Roboto, Arial;
+      font-size: 12px;
+      color: #606060;
+
+  }
+.description,
+.description_1,
+.description_2{
+      font-family: Roboto, Arial;
+      font-size: 14px;
+      color: #0F0F0F;
+      line-height: 1.5;
+
+  }
+.description_1{
+     padding-top: 8px;
+  }
+.description_2{
+    color: #065FD4;
+    margin-top: 20px;
+    width: 400px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor:pointer;
+  }
+.text{
+    margin-left: 25px;
+    width: 400px;
+
+
+  }
+.read-more{
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: -11px;
+    cursor:pointer;
+  }
