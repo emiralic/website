@@ -7,6 +7,7 @@
     width: 300px;
     align-items: center;
     margin: 150px 0 0 618px;
+    text-align: center;
 }
 .prijava-text{
     font-family: Roboto, Arial;
@@ -27,6 +28,7 @@
     padding-left: 10px;
     font-family: Roboto, Arial;
     font-size: 17px;
+
 
 }
 .prijava-tab:focus{
@@ -51,11 +53,16 @@
 }
 .nalog{
     font-family: Roboto, Arial;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 400px;
+    margin-right: 45px;
+    overflow: hidden;
+    white-space: nowrap;
+
 }
 .uredjivanje-texta{
     color: rgb(51, 51, 204);
+
 }
 .logout-icon{
     width: 15px;
@@ -65,4 +72,10 @@
 }
 .logout-button{
     border: none;
+}
+.label-text{
+    padding-right: 199px;
+}
+.label-text1{
+    padding-right: 240px;
 }
