@@ -1,4 +1,7 @@
-from flask import Blueprint, render_template, request, flash
+from flask import Blueprint, render_template, request, flash, redirect, url_for
+from .models import User
+from werkzeug.security import generate_password_hash, check_password_hash
+from . import db
 
 auth = Blueprint('auth', __name__)
 
@@ -13,9 +16,9 @@ def logout():
 @auth.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
-        email = request.form.get('email')
         ime = request.form.get('ime')
         prezime = request.form.get('prezime')
+        email = request.form.get('email')
         lozinka1 = request.form.get('lozinka1')
         lozinka2 = request.form.get('lozinka2')
 
@@ -31,6 +34,11 @@ def register():
         elif len(lozinka1) < 6:
             flash('Lozinka mora sadržavati više od 5 znakova.', category = 'error')
         else:
+            novi_korisnik=User(ime=ime, prezime=prezime, email=email, lozinka=generate_password_hash(lozinka1, method='sha256'))
+            db.session.add(novi_korisnik)
+            db.session.commit()
             flash('Profil uspješno kreiran.', category = 'success')
+            return redirect(url_for('auth.login'))
+
 
     return render_template('register.html')
