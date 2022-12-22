@@ -5,8 +5,21 @@ from . import db
 
 auth = Blueprint('auth', __name__)
 
-@auth.route('/login')
+@auth.route('/login', methods = ['GET', 'POST'])
 def login():
+    if request.method == 'POST':
+        email = request.form.get('email')
+        lozinka = request.form.get('lozinka1')
+        korisnik = User.query.filter_by(email=email).first
+        if korisnik:
+            if check_password_hash(korisnik.lozinka, lozinka):
+                flash('Prijava uspješna!', category='success')
+                return redirect(url_for('views.home'))
+            else:
+                flash('Pogrešna lozinka.', category='error')
+        else:
+            flash('Email adresa ne postoji.', category='error')
+
     return render_template('login.html')
 
 @auth.route('/logout')
@@ -22,8 +35,10 @@ def register():
         lozinka1 = request.form.get('lozinka1')
         lozinka2 = request.form.get('lozinka2')
 
-
-        if len(ime) < 2:
+        korisnik = User.query.filter_by(email=email).first()
+        if korisnik:
+            flash('Email adresa već postoji!', category='error')
+        elif len(ime) < 2:
             flash('Ime mora sadržavati više od 1 slova.', category='error')
         elif len(prezime) < 2:
             flash('Prezime mora sadržavati više od 1 slova.', category = 'error')

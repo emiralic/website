@@ -10,7 +10,7 @@ class Note(db.Model):
 class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(150), unique=True)
-    lozinka=db.Column(db.String(150))
-    ime=db.Column(db.String(30))
-    prezime=db.Column(db.String(30))
-    notes=db.relationship('Note')
+    lozinka = db.Column(db.String(150))
+    ime = db.Column(db.String(30))
+    prezime = db.Column(db.String(30))
+    notes = db.relationship('Note')
