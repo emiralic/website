@@ -64,15 +64,7 @@
     color: rgb(51, 51, 204);
 
 }
-.logout-icon{
-    width: 15px;
-    height: 15px;
-    margin: -58px 0 0 1470px;
-    background-color: rgb(255, 77, 77);
-}
-.logout-button{
-    border: none;
-}
+
 .label-text{
     padding-right: 199px;
 }

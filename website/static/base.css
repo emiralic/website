@@ -25,6 +25,7 @@
     height: 90px;
     border-radius: 48px;
     align-items: center;
+    margin-left: 400px;
 }
 
 
@@ -84,4 +85,21 @@
 .dropdown li:hover{
     background-color: rgb(255, 128, 128);
     color: black;
+}
+.logout-icon{
+    width: 15px;
+    height: 15px;
+    margin: -58px 0 0 1470px;
+    background-color: rgb(255, 77, 77);
+
+}
+.logout-button{
+    border: none;
+    position: relative;
+}
+.logo1{
+    height: 90px;
+    border-radius: 48px;
+    align-items: center;
+    margin-left: 40px;
 }

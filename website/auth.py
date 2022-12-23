@@ -2,6 +2,7 @@ from flask import Blueprint, render_template, request, flash, redirect, url_for
 from .models import User
 from werkzeug.security import generate_password_hash, check_password_hash
 from . import db
+from flask_login import login_user, login_required, logout_user, current_user
 
 auth = Blueprint('auth', __name__)
 
@@ -14,17 +15,21 @@ def login():
         if korisnik:
             if check_password_hash(korisnik.lozinka, lozinka):
                 flash('Prijava uspješna!', category='success')
-                return redirect(url_for('views.home'))
+                login_user(korisnik, remember=True)
+                return redirect(url_for('views.pocetna'))
             else:
                 flash('Pogrešna lozinka.', category='error')
         else:
             flash('Email adresa ne postoji.', category='error')
 
-    return render_template('login.html')
+    return render_template('login.html', korisnik=current_user)
 
 @auth.route('/logout')
+@login_required
 def logout():
-    return "<p>Logout</p>"
+    logout_user()
+    return redirect(url_for('auth.login'))
+
 
 @auth.route('/register', methods=['GET', 'POST'])
 def register():
@@ -52,8 +57,9 @@ def register():
             novi_korisnik=User(ime=ime, prezime=prezime, email=email, lozinka=generate_password_hash(lozinka1, method='sha256'))
             db.session.add(novi_korisnik)
             db.session.commit()
+            login_user(novi_korisnik, remember=True)
             flash('Profil uspješno kreiran.', category = 'success')
             return redirect(url_for('auth.login'))
 
 
-    return render_template('register.html')
+    return render_template('register.html', korisnik=current_user)
