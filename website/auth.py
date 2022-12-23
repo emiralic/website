@@ -9,8 +9,8 @@ auth = Blueprint('auth', __name__)
 def login():
     if request.method == 'POST':
         email = request.form.get('email')
-        lozinka = request.form.get('lozinka1')
-        korisnik = User.query.filter_by(email=email).first
+        lozinka = request.form.get('lozinka')
+        korisnik = User.query.filter_by(email=email).first()
         if korisnik:
             if check_password_hash(korisnik.lozinka, lozinka):
                 flash('Prijava uspješna!', category='success')

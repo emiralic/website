@@ -24,7 +24,9 @@ def create_app():
 
 def create_database(app):
     if not path.exists('website/' + DB_NAME):
-        db.create_all(app=app)
+        with app.app_context():
+            db.create_all()
+
         print('Baza podatak je kreirana.')
 
 
