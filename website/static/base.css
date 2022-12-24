@@ -15,6 +15,7 @@
     align-items: center;
     height: 100px;
     background-color: rgb(255, 77, 77);
+    z-index: 300;
 
 }
 

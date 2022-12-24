@@ -16,3 +16,8 @@ def youtube():
 @login_required
 def pocetna():
     return render_template('home.html', korisnik=current_user)
+
+@views.route('/mpismo')
+@login_required
+def mpismo():
+    return render_template('mpismo.html', korisnik=current_user)

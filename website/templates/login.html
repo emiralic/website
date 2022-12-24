@@ -5,21 +5,21 @@
 {% extends "base.html"%}
 {% block content %}
 
-    <div class="prijava">
+    <div class="login">
         <div>
         <form method="POST">
-             <div class="prijava-text">PRIJAVA</div>
+             <div class="login-text">PRIJAVA</div>
               <div class="form-group">
                 <label class="label-text" for="email">Email Adresa</label>
-                <input class="prijava-tab" type="email" id="email" name="email" placeholder="Email adresa">
+                <input class="login-tab" type="email" id="email" name="email" placeholder="Email adresa">
               </div>
              <div class="form-group">
                 <label class="label-text1" for="lozinka">Lozinka</label>
-                <input class="prijava-tab" type="password" id="lozinka" name="lozinka" placeholder="Vaša lozinka">
+                <input class="login-tab" type="password" id="lozinka" name="lozinka" placeholder="Vaša lozinka">
              </div>
-             <button class="prijava-button">PRIJAVA</button>
-             <div class="nalog">Niste jos registrovani?
-                 <a class="uredjivanje-texta" href="/register">Otvorite nalog</a>
+             <button class="login-button">PRIJAVA</button>
+             <div class="profile">Niste jos registrovani?
+                 <a class="text-edit" href="/register">Otvorite nalog</a>
              </div>
         </form>
         </div>

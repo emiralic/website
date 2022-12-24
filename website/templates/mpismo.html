@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='mpismo.css') }}">
+
+{% extends "base.html" %}
+{% block content %}
+
+
+  <div class="left-side">
+    <div class="line">
+      <div class="middle">
+        <div class="personal-info"> Lične informacije</div>
+        <button class="image-name">
+          <img class="image" src="static/mpismo-images/men-icon.png">
+          <p class="name">Emir Alić</p>
+        </button>
+        <button class="image-name1">
+          <img class="image1" src="static/mpismo-images/email-icon.png">
+          <p class="name">emiralic22@gmail.com</p>
+        </button>
+        <button class="image-name2">
+          <img class="image2" src="static/mpismo-images/phone-icon.png">
+          <p class="name2">+38760-3444-321</p>
+        </button>
+        <button class="image-name2">
+          <img class="image3" src="static/mpismo-images/home-icon.png">
+          <div class="two-titles">
+            <p class="name3">Čiriš 44, Gračanica</p>
+            <p class="name4">Mustafe Behmena 5A, Sarajevo</p>
+          </div>
+        </button>
+        <button class="image-name2">
+          <img class="image3" src="static/mpismo-images/linkedin-icon.png">
+          <a href="http://127.0.0.1:5000/linkedin">
+            <p class="name6">Emir Alić</p>
+          </a>
+        </button>
+        <button class="image-name2">
+          <img class="image4" src="static/mpismo-images/youtube-icon.png">
+          <a href="http://127.0.0.1:5000/youtube">
+            <p class="name6">The BallGame</p>
+          </a>
+        </button>
+      </div>
+    <div class="line1">
+
+    </div>
+    </div>
+   </div>
+
+
+
+
+{% endblock %}
