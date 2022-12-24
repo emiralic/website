@@ -24,7 +24,9 @@
     border-width: 1px;
 }
 
-.login-tab[type="text"]{
+.login-tab[type="text"],
+.login-tab[type="email"],
+.login-tab[type="password"]{
     padding-left: 10px;
     font-family: Roboto, Arial;
     font-size: 17px;

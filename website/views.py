@@ -21,3 +21,8 @@ def pocetna():
 @login_required
 def mpismo():
     return render_template('mpismo.html', korisnik=current_user)
+
+@views.route('/cv')
+@login_required
+def cv():
+    return render_template('cv.html', korisnik=current_user)

@@ -112,4 +112,18 @@
      background-color: rgb(255, 77, 77);
      top:0;
 }
+.full-text{
+    position: absolute;
+    width: 900px;
+    color: black;
+    left: 450px;
+    top:0;
 
+}
+.text-edit{
+    padding-top: 20px;
+    text-align: center;
+    font-family: Roboto, Arial;
+    font-size: 26px;
+    font-weight: 500;
+}
