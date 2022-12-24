@@ -1,11 +1,12 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
 
-<link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}"
 
 {% extends "base.html"%}
 {% block content %}
 
-    <div>
-        <div class="prijava">
+    <div class="prijava">
+        <div>
         <form method="POST">
              <div class="prijava-text">PRIJAVA</div>
               <div class="form-group">
@@ -25,5 +26,3 @@
     </div>
 
 {% endblock %}
-
-

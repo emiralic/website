@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 *{
-    padding:0;
-    margin:0;
+    margin: 0;
     box-sizing: border-box;
     font-family: Roboto, Arial;
     font-weight: 500;
@@ -10,22 +9,35 @@
 }
 .menu{
     display: flex;
+    position: relative;
     flex-direction: row;
+    width: 100%;
     align-items: center;
     height: 100px;
-    justify-content: space-between;
     background-color: rgb(255, 77, 77);
+
 }
+
 .middle-part-menu{
-    padding: 5px 0 5px;
-    margin:0;
-    align-items: center;
+    position: absolute;
+    margin-left: 723px;
+
+}
+.left-part-menu{
+    position: relative;
+    margin-right: auto;
+    z:index: 100;
+}
+.right-part-menu{
+    align-items: right;
+    margin-left: auto;
 }
 .logo{
     height: 90px;
     border-radius: 48px;
     align-items: center;
-    margin-left: 400px;
+
+
 }
 
 
@@ -39,12 +51,8 @@
     color: white;
     text-transform: uppercase;
 }
-.right-part-menu{
-    padding-right: 70px;
-}
-.left-part-menu{
-    padding-left: 70px;
-}
+
+
 .left-part-menu a:hover,
 .right-part-menu a:hover{
     background: rgb(255, 128, 128);
@@ -64,6 +72,8 @@
 .left-part-menu li:hover .dropdown li{
     top:0;
     display:block;
+    width: 200px;
+
 }
 .left-part-menu ul li a,
 .right-part-menu ul li a{
@@ -74,13 +84,16 @@
 .dropdown li{
     display: none;
     position: relative;
+    align-items: center;
 }
 .dropdown{
     position: absolute;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 250px;
     background-color: rgb(255, 77, 77);
+    align-items: center;
+    padding: 0 30px 0 30px;
 }
 .dropdown li:hover{
     background-color: rgb(255, 128, 128);
@@ -96,10 +109,4 @@
 .logout-button{
     border: none;
     position: relative;
-}
-.logo1{
-    height: 90px;
-    border-radius: 48px;
-    align-items: center;
-    margin-left: 40px;
 }
