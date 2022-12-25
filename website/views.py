@@ -26,3 +26,8 @@ def mpismo():
 @login_required
 def cv():
     return render_template('cv.html', korisnik=current_user)
+
+@views.route('/linkedin')
+@login_required
+def linkedin():
+    return render_template ('linkedin.html', korisnik=current_user)
