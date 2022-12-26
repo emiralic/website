@@ -15,7 +15,7 @@
     cursor: pointer;
 }
 .search-bar{
-    height: 32px;
+    height: 33px;
     width: 270px;
     margin: 10px 0 0 -3px;
     border-radius: 3px;
@@ -41,9 +41,9 @@
 }
 .search-button{
     width: 33px;
-    height: 34px;
+    height: 35px;
     margin-left: 6px;
-    background-color: white;
+    background-color: rgb(201, 217, 233);
     border: none;
     outline: none;
     margin-top: 10px;
@@ -51,6 +51,7 @@
     border-bottom-left-radius: 3px;
     cursor: pointer;
     position:relative;
+
 }
 .search-logo{
     height: 15px;
