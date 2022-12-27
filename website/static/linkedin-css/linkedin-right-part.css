@@ -52,15 +52,13 @@
     text-align: center;
     color: white;
     font-weight: 700;
-    margin-left: -2px;
+    margin-left: -3px;
 
 }
 .question-mark1{
     margin: 1px 0 0 30px;
 }
-.question-mark-text1{
-    margin-left: -3px;
-}
+
 .line-between{
     height: 1px;
     width: 274px;

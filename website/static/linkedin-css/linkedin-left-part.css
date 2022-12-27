@@ -11,7 +11,11 @@
 .left-part2,
 .left-part3,
 .left-part4,
-.left-part5{
+.left-part5,
+.left-part6,
+.left-part7,
+.left-part8,
+.left-part9{
     display: flex;
     flex-direction: column;
     width: 782px;
@@ -211,7 +215,8 @@
     flex-direction: row;
 }
 .profile-views-icon,
-.post-impressions-icon{
+.post-impressions-icon,
+.endorsement-icon{
     width: 24px;
     height: 24px;
     padding: 10px 0 0 30px;
@@ -232,7 +237,8 @@
 }
 .profile-views-description,
 .post-impressions-description,
-.search-appearances-description{
+.search-appearances-description,
+.youtube-job-duration{
     font-family: Roboto, Arial;
     font-size: 14px;
     font-weight: 400;
@@ -260,13 +266,15 @@
     flex-direction: column;
 }
 .creator-mode-icon,
-.my-network-icon{
+.my-network-icon,
+.youtube-icon{
     width: 33px;
     height: 30px;
     padding: 10px 0 0 27px;
 }
 .creator-mode-text,
-.my-network-text{
+.my-network-text,
+.youtube-text{
     font-family: Roboto, Arial;
     font-size: 16px;
     font-weight: 500;
@@ -284,13 +292,19 @@
     underline: none;
 }
 .creator-mode-description,
-.my-network-description{
+.my-network-description,
+.youtube-job-duration,
+.job-description,
+.skills-description{
     font-family: Roboto, Arial;
     font-size: 14px;
     font-weight: 300;
     margin: 5px 0 0 -97px;
 }
-.my-network-description{
+.my-network-description,
+.youtube-job-duration,
+.job-description,
+.skills-description{
     margin: 5px 0 0 7px;
 }
 .left-part4{
@@ -313,7 +327,8 @@
     display:flex;
     flex-direction: row;
 }
-.start-a-post-button{
+.start-a-post-button,
+.demonstrate-button{
     margin: 30px 0 0 550px;
     width: 116px;
     height: 32px;
@@ -332,7 +347,8 @@
     font-weight: 500;
     margin: 15px 0 0 32px;
 }
-.activity-description{
+.activity-description,
+.endorsement{
     font-family: Roboto, Arial;
     font-size: 14px;
     font-weight: 300;
@@ -343,7 +359,7 @@
     font-size: 16px;
     font-weight: 500;
     color: rgb(140, 140, 140);
-    margin-top: -10px;
+    margin-top: -20px;
     display: block;
     text-align: center;
 }
@@ -352,4 +368,51 @@
     width: 100%;
     background-color: rgb(242, 242, 242);
     margin: 17px 0 17px 0;
+}
+.left-part6{
+    height: 664px;
+    margin: 8px 0 0 204px;
+}
+.youtube-text{
+    margin: -5px 0 0 0px;
+}
+.youtube-icon{
+    height: 45px;
+    width: 48px;
+}
+.youtube-job-duration{
+    color: gray;
+    font-weight: 300;
+    max-width: 600px;
+}
+.job-description{
+    margin-top: 17px;
+    max-width: 650px;
+}
+.skills-description{
+    margin-top: 10px;
+}
+.left-part7{
+    height: 160px;
+    margin: 8px 0 0 204px;
+
+}
+.left-part8{
+    height: 180px;
+    margin: 8px 0 0 204px;
+}
+.left-part9{
+    height: 1060px;
+    margin: 8px 0 0 204px;
+}
+.demonstrate-button{
+    width: 166px;
+    margin: 30px 0 0 500px;
+}
+.endorsement-row{
+    display: flex;
+    flex-direction: row;
+}
+.endorsement{
+    margin: 15px 0 0 10px;
 }
