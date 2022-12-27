@@ -1,16 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 .right-part{
+    display:flex;
+    flex-direction: column;
+    position: relative;
     height: 117px;
     width: 306px;
     background-color: white;
-    margin: 24px 0 0 16px;
+    margin: 24px 0 0 24px;
     border-radius: 10px;
     border: 1.5px solid;
     border-color: rgb(217, 217, 217);
 }
+.right-part1{
+    display:flex;
+    flex-direction:column;
+}
 .text-and-question{
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 .edit-public-profile-text,
 .add-profile-in-another-language-text{
@@ -58,4 +66,72 @@
     width: 274px;
     background-color: rgb(242, 242, 242);
     margin: 17px 0 17px 14px;
+}
+.right-part2{
+    display:flex;
+    flex-direction: column;
+    margin-top: 40px;
+    height: 250px;
+    width: 306px;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    border: 1.5px solid;
+    border-color: rgb(217, 217, 217);
+}
+.ad{
+    font-family: Roboto, Arial;
+    font-size: 14px;
+    padding: 5px 0 0 250px;
+}
+.linkedin-premium-text{
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    color: gray;
+    padding: 5px 0 0 35px;
+    max-width: 250px;
+}
+.linkedin-premium-text span{
+    display: block;
+    text-align: center;
+}
+.profile-key-photos{
+    display:flex;
+    flex-direction: row;
+}
+.ad-profile-photo,
+.ad-key-photo{
+    height: 76px;
+    width: 76px;
+    margin: 5px 0 0 50px;
+    border-radius: 40px;
+}
+.ad-key-photo{
+    margin: 0 0 0 20px;
+}
+.profile-views-text{
+    font-family: Roboto, Arial;
+    font-size: 15px;
+    padding: 10px 0 0 25px;
+    font-weight: 300;
+    max-width: 270px;
+}
+.profile-views-text span{
+    display: block;
+    text-align: center;
+}
+.try-for-free-button{
+    width: 105px;
+    height: 40px;
+    align-items: center;
+    margin: 10px 0 0 110px;
+    border-radius: 20px;
+    border: 1px solid;
+    border-color: rgb(10, 102, 194);
+    cursor: pointer;
+}
+.try-for-free-text{
+    font-family: Roboto, Arial;
+    font-size: 14px;
+    color:rgb(10, 102, 194);
 }

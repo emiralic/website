@@ -4,6 +4,14 @@
     flex-direction: row;
 }
 .left-part{
+    display:flex;
+    flex-direction: column;
+}
+.left-part1,
+.left-part2,
+.left-part3,
+.left-part4,
+.left-part5{
     display: flex;
     flex-direction: column;
     width: 782px;
@@ -53,7 +61,8 @@
 }
 .city-adress,
 .contact-info,
-.connections{
+.connections,
+.connections1{
     font-family: Roboto, Arial;
     font-size: 14px;
     margin: 7px 0 0 24px;
@@ -61,7 +70,8 @@
     font-weight: 300;
 }
 .contact-info,
-.connections{
+.connections,
+.connections1{
     margin: 3px 0 0 24px;
     color: rgb(10, 102, 194);
     font-weight: 500;
@@ -69,7 +79,8 @@
 
 }
 .contact-info:hover,
-.connections:hover{
+.connections:hover,
+.connections1:hover{
     text-decoration: underline;
 }
 .connections{
@@ -95,7 +106,8 @@
 }
 .open-to-text,
 .add-profile-text,
-.more-text{
+.more-text,
+.start-a-post-text{
     font-family: Roboto, Arial;
     font-size: 16px;
     color: white;
@@ -111,12 +123,14 @@
     border-color: rgb(10, 102, 194);
     cursor:pointer;
 }
-.add-profile:hover{
+.add-profile:hover,
+.start-a-post-button:hover{
     border: 2px solid;
     background-color: rgb(206, 230, 253);
     border-color: rgb(10, 102, 194);
 }
-.add-profile-text{
+.add-profile-text,
+.start-a-post-text{
     color: rgb(10, 102, 194);
 }
 .more-button{
@@ -163,4 +177,179 @@
 }
 .details-text:hover{
     text-decoration: underline;
+}
+.left-part2{
+    height: 167px;
+    margin: 8px 0 0 204px;
+
+}
+.analytics-text{
+    font-family: Roboto, Arial;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 30px 0 0 32px;
+
+}
+.eye-private{
+    display:flex;
+    flex-display: row;
+}
+.eye-icon{
+    width: 20px;
+    height: 20px;
+    padding: 0 0 0 32px;
+}
+.private-to-you-text{
+    font-family: Roboto, Arial;
+    font-size: 14px;
+    color: gray;
+    font-weight: 300;
+    padding: 0 0 0 1.5px;
+}
+.three-analytics{
+    display:flex;
+    flex-direction: row;
+}
+.profile-views-icon,
+.post-impressions-icon{
+    width: 24px;
+    height: 24px;
+    padding: 10px 0 0 30px;
+}
+.profile-views-tab,
+.post-impressions-tab,
+.search-appearances-tab{
+    display:flex;
+    flex-direction: column;
+}
+.profile-views,
+.post-impressions,
+.search-appearances{
+    font-family: Roboto, Arial;
+    font-size: 16px;
+    margin: 13px 0 0 7px;
+    font-weight: 500;
+}
+.profile-views-description,
+.post-impressions-description,
+.search-appearances-description{
+    font-family: Roboto, Arial;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(77, 77, 77);
+    margin: 2px 0 0 8px;
+    max-width: 200px;
+}
+.search-appearances-icon{
+     width: 20px;
+    height: 20px;
+    padding: 10px 0 0 30px;
+}
+.left-part3{
+    height: 412px;
+    margin: 8px 0 0 204px;
+
+}
+.creator-mode,
+.my-network{
+    display:flex;
+    flex-direction: row;
+}
+.my-network-together{
+    display:flex;
+    flex-direction: column;
+}
+.creator-mode-icon,
+.my-network-icon{
+    width: 33px;
+    height: 30px;
+    padding: 10px 0 0 27px;
+}
+.creator-mode-text,
+.my-network-text{
+    font-family: Roboto, Arial;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 17px 0 0 7px;
+}
+.creator-mode-off{
+    display: flex;
+    flex-direction: column;
+}
+.creator-mode-off-button{
+    width: max-content;
+    margin: 17px 0 0 7px;
+    background-color: rgb(230, 230, 230);
+    border: none;
+    underline: none;
+}
+.creator-mode-description,
+.my-network-description{
+    font-family: Roboto, Arial;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 5px 0 0 -97px;
+}
+.my-network-description{
+    margin: 5px 0 0 7px;
+}
+.left-part4{
+    height: 134px;
+    margin: 8px 0 0 204px;
+
+}
+.about-description{
+    font-family: Roboto, Arial;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 30px 0 0 32px;
+}
+.left-part5{
+    height: 174.5px;
+    margin: 8px 0 0 204px;
+
+}
+.activity-and-button{
+    display:flex;
+    flex-direction: row;
+}
+.start-a-post-button{
+    margin: 30px 0 0 550px;
+    width: 116px;
+    height: 32px;
+    background-color: white;
+    border-radius: 16px;
+    border: 1.5px solid;
+    border-color: rgb(10, 102, 194);
+    cursor:pointer;
+}
+.connections1{
+    margin: -8px 0 0 32px;
+}
+.below-activity-title{
+    font-family: Roboto, Arial;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 15px 0 0 32px;
+}
+.activity-description{
+    font-family: Roboto, Arial;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 5px 0 0 32px;
+}
+.show-all-activity-text{
+    font-family: Roboto, Arial;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(140, 140, 140);
+    margin-top: -10px;
+    display: block;
+    text-align: center;
+}
+.line-between1{
+    height: 1px;
+    width: 100%;
+    background-color: rgb(242, 242, 242);
+    margin: 17px 0 17px 0;
 }
