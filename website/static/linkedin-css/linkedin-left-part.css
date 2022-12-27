@@ -43,7 +43,7 @@
     font-family: Roboto, Arial;
     font-size: 24px;
     font-weight: 500;
-    margin: 10px 0 0 24px;
+    margin: 20px 0 0 24px;
 
 }
 .university-photo{
@@ -394,7 +394,7 @@
 }
 .left-part7{
     height: 160px;
-    margin: 8px 0 0 204px;
+    margin: 8px 0 0px 204px;
 
 }
 .left-part8{
@@ -402,12 +402,14 @@
     margin: 8px 0 0 204px;
 }
 .left-part9{
-    height: 1060px;
+    height: auto;
     margin: 8px 0 0 204px;
+    padding-bottom: 10px;
 }
 .demonstrate-button{
     width: 166px;
-    margin: 30px 0 0 500px;
+    margin: 30px 0 0 400px;
+    z-index: 100;
 }
 .endorsement-row{
     display: flex;
@@ -415,4 +417,48 @@
 }
 .endorsement{
     margin: 15px 0 0 10px;
+}
+.all-text{
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+input{
+    display:none;
+
+}
+label{
+    font-family: Roboto, Arial;
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    cursor: pointer;
+    color: black;
+    position: relative;
+    margin: -30px 0 0 46px;
+    user-select: none;
+}
+label:before {
+    content: " ";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent
+    transparent transparent black;
+    height: 0;
+    font-size: 0;
+    position: absolute;
+    top: 2px;
+    left: -50px;
+    margin-left: 30px;
+    transition transform 0.5s;
+    transition-origin: 3px center;
+}
+input:checked ~ label:before{
+    transform: rotate(90deg);
+
+}
+input:checked ~ .all-text{
+    opacity: 1;
+    height: auto;
+
 }
