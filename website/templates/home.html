@@ -4,13 +4,31 @@
   <title>{% block title %}Title{% endblock %}</title>
 
 <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
-<link rel="stylesheet" href="{{ url_for('static', filename='pocetna.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='base1.css') }}">
 
 </head>
 <body>
 
 {% extends "base.html"%}
 {% block content %}
+<div id="here"></div>
+<img class="back-image" id="my-image" src="static/index-background.jpg">
+
+<div  class="home-page-description">
+    djesi
+</div>
+<style>
+body{
+  margin:0;
+  height:100%;
+  overflow:hidden;
+
+}
+
+
+</style>
+
+
 {% endblock %}
 
 

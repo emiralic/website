@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+.back-image{
+   height: 100%;
+   width: 100%;
+
+    }
+#here {
+  display: block;
+  position: relative;
+  overflow:hidden;
+  margin: -30px 0 0 -30px;
+}
+
+
+#here:before{
+  content:'@';
+  color:transparent;
+  transition:linear 1s;
+  animation:chng 1s linear infinite;
+}
+
+
+@keyframes chng{
+  0% {
+    content: '@';
+  }
+  20% {
+    content: '!';
+  }
+  30% {
+    content: '#';
+  }
+  40% {
+    content: '%';
+  }
+  50% {
+    content: '^';
+  }
+  60% {
+    content: '&';
+  }
+  70% {
+    content: '*';
+  }
+  80% {
+    content: '(';
+  }
+  90% {
+    content: ')';
+  }
+  100% {
+    content: '@';
+  }
+}

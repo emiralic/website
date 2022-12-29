@@ -14,7 +14,6 @@ def login():
         korisnik = User.query.filter_by(email=email).first()
         if korisnik:
             if check_password_hash(korisnik.lozinka, lozinka):
-                flash('Prijava uspješna!', category='success')
                 login_user(korisnik, remember=True)
                 return redirect(url_for('views.pocetna'))
             else:

@@ -5,7 +5,7 @@ views = Blueprint('views', __name__)
 
 @views.route('/')
 def home():
-    return render_template('base.html', korisnik=current_user)
+    return render_template('base1.html', korisnik=current_user)
 
 @views.route('/youtube')
 @login_required

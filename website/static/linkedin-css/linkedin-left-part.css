@@ -423,7 +423,7 @@
     overflow: hidden;
     opacity: 0;
 }
-input{
+.expand input{
     display:none;
 
 }

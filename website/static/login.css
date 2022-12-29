@@ -57,9 +57,9 @@
     font-family: Roboto, Arial;
     font-size: 20px;
     font-weight: 400px;
-    margin-right: 45px;
-    overflow: hidden;
-    white-space: nowrap;
+    margin-left: 27px;
+    width: 250px;
+    word-wrap: break-word;
 
 }
 .text-edit{

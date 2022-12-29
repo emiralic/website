@@ -19,8 +19,10 @@
                         <li><a id="mpismo" href="/mpismo">Motivaciono pismo</a></li>
                         <li><a id="linkedin" href="/linkedin">Linkedin profil</a></li>
                         <li><a id="youtube" href="/youtube">Youtube profil</a></li>
-                        {% endif %}
-                    </ul>
+                        </ul>
+                    {%else%}
+                    <li><a id="home" href="/">Početna stranica</a></li>
+                    {% endif %}
                 </li>
             </ul>
         </div>
@@ -45,7 +47,8 @@
         {% for category, message in messages %}
         {% if category == 'error'%}
         <div class="alert alert-warning alert-dismissible fade show" role="alert"
-             style="width: max-content;
+             style="width: 300px;
+                    font-size: 12px;
                     background-color: rgb(232, 125, 134);
                     margin-left: 609.6px;
                     padding: 10px 20px 10px 20px;
@@ -53,6 +56,7 @@
             <span>{{ message }}</span>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"
                     style="width: 20px;
+                           font-size: 12px;
                            outline: none;
                            border:none;
                            background-color: rgb(232, 125, 134);
@@ -64,7 +68,8 @@
 
         {% else %}
          <div class="alert alert-warning alert-dismissible fade show" role="alert"
-             style="width: 305px;
+             style="width: 300px;
+                    font-size: 12px;
                     background-color: rgb(74, 194, 107);
                     margin-left: 609.6px;
                     padding: 10px 20px 10px 20px;
@@ -72,12 +77,13 @@
             <span>{{ message }}</span>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"
                     style="width: 20px;
+                           font-size: 12px;
                            outline: none;
                            border:none;
                            background-color: rgb(74, 194, 107);
-                           color: white; ">
+                           color: white;">
 
-            <span aria-hidden="true">&times;</span>
+            <span aria-hidden="true" style="z-index: 1000;">&times;</span>
           </button>
         </div>
         {% endif %}
