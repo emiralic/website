@@ -33,10 +33,12 @@
         </div>
         <div class="right-part-menu">
             <ul>
-                <li><a id="register" href="/register">Registrujte se</a></li>
-                <li><a id="login" href="/login">Prijavite se</a></li>
+
                 {% if korisnik.is_authenticated%}
                 <li><a id="logout" href="/logout">Odjava</a></li>
+                {% else %}
+                <li><a id="register" href="/register">Registrujte se</a></li>
+                <li><a id="login" href="/login">Prijavite se</a></li>
                 {% endif %}
             </ul>
         </div>
