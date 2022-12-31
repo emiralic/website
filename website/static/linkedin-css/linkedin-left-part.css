@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
     width: 782px;
-    margin: 24px 0 0 204px;
+    margin: 74px 0 0 204px;
     height: 543px;
     background-color: white;
     border-radius: 15px;
@@ -34,6 +34,7 @@
     border-radius: 80px;
     border: 4px solid white;
     z-index: 100;
+    cursor: pointer;
 }
 .name-and-university{
     display: flex;
@@ -54,8 +55,13 @@
 .university-name{
     font-family: Roboto, Arial;
     font-size: 14px;
-    margin: -28px 0 0 430px;
+    margin: -28px 0 0 420px;
     cursor:pointer;
+}
+.university-name:hover{
+    text-decoration: underline;
+    color: rgb(10, 102, 194);
+    font-weight: 500;
 }
 .description{
     font-family: Roboto, Arial;
@@ -128,7 +134,8 @@
     cursor:pointer;
 }
 .add-profile:hover,
-.start-a-post-button:hover{
+.start-a-post-button:hover,
+.demonstrate-button:hover{
     border: 2px solid;
     background-color: rgb(206, 230, 253);
     border-color: rgb(10, 102, 194);
@@ -220,6 +227,8 @@
     width: 24px;
     height: 24px;
     padding: 10px 0 0 30px;
+    cursor: pointer;
+
 }
 .profile-views-tab,
 .post-impressions-tab,
@@ -234,22 +243,27 @@
     font-size: 16px;
     margin: 13px 0 0 7px;
     font-weight: 500;
+    cursor: pointer;
 }
 .profile-views-description,
 .post-impressions-description,
 .search-appearances-description,
-.youtube-job-duration{
+.youtube-job-duration,
+.youtube-job-duration1{
     font-family: Roboto, Arial;
     font-size: 14px;
     font-weight: 400;
     color: rgb(77, 77, 77);
     margin: 2px 0 0 8px;
     max-width: 200px;
+    cursor: pointer;
+
 }
 .search-appearances-icon{
      width: 20px;
     height: 20px;
     padding: 10px 0 0 30px;
+    cursor:pointer;
 }
 .left-part3{
     height: 412px;
@@ -257,28 +271,35 @@
 
 }
 .creator-mode,
-.my-network{
+.my-network,
+.my-network1{
     display:flex;
     flex-direction: row;
+    cursor: pointer;
 }
 .my-network-together{
     display:flex;
     flex-direction: column;
+    cursor:pointer;
 }
 .creator-mode-icon,
 .my-network-icon,
-.youtube-icon{
+.youtube-icon,
+.youtube-icon1{
     width: 33px;
     height: 30px;
     padding: 10px 0 0 27px;
+    cursor:pointer;
 }
 .creator-mode-text,
 .my-network-text,
-.youtube-text{
+.youtube-text,
+.youtube-text1{
     font-family: Roboto, Arial;
     font-size: 16px;
     font-weight: 500;
     padding: 17px 0 0 7px;
+    cursor:pointer;
 }
 .creator-mode-off{
     display: flex;
@@ -290,28 +311,37 @@
     background-color: rgb(230, 230, 230);
     border: none;
     underline: none;
+    cursor:pointer;
+
 }
 .creator-mode-description,
 .my-network-description,
 .youtube-job-duration,
 .job-description,
-.skills-description{
+.skills-description,
+.my-network-description1,
+.youtube-job-duration1{
     font-family: Roboto, Arial;
     font-size: 14px;
     font-weight: 300;
     margin: 5px 0 0 -97px;
+    cursor:pointer;
 }
 .my-network-description,
 .youtube-job-duration,
 .job-description,
-.skills-description{
+.skills-description,
+.my-network-description1,
+.youtube-job-duration1{
     margin: 5px 0 0 7px;
+    cursor:pointer;
 }
 .left-part4{
     height: 134px;
     margin: 8px 0 0 204px;
 
 }
+
 .about-description{
     font-family: Roboto, Arial;
     font-size: 14px;
@@ -341,7 +371,8 @@
 .connections1{
     margin: -8px 0 0 32px;
 }
-.below-activity-title{
+.below-activity-title,
+.below-activity-title1{
     font-family: Roboto, Arial;
     font-size: 16px;
     font-weight: 500;
@@ -360,8 +391,13 @@
     font-weight: 500;
     color: rgb(140, 140, 140);
     margin-top: -20px;
+    padding: 10px 0 10px 0;
     display: block;
     text-align: center;
+    cursor:pointer;
+}
+.show-all-activity-text:hover{
+    background-color: rgb(230, 230, 230);
 }
 .line-between1{
     height: 1px;
@@ -372,30 +408,65 @@
 .left-part6{
     height: 664px;
     margin: 8px 0 0 204px;
+    cursor: text;
 }
-.youtube-text{
+.my-network1{
+    cursor: text;
+}
+.youtube-text,
+.youtube-text1{
     margin: -5px 0 0 0px;
+    cursor: text;
 }
-.youtube-icon{
+.youtube-icon,
+.youtube-icon1{
     height: 45px;
     width: 48px;
 }
-.youtube-job-duration{
+.youtube-job-duration,
+.youtube-job-duration1{
     color: gray;
     font-weight: 300;
     max-width: 600px;
+    cursor: text;
 }
 .job-description{
     margin-top: 17px;
     max-width: 650px;
+    cursor: text;
 }
 .skills-description{
     margin-top: 10px;
+    cursor: text;
+}
+.my-network-description1{
+    cursor: text;
+}
+.my-network-together{
+    cursor:text;
 }
 .left-part7{
     height: 160px;
     margin: 8px 0 0px 204px;
 
+}
+.youtube-text1:hover,
+.below-activity-title1:hover,
+.endorsement:hover,
+.profile-views:hover,
+.post-impressions:hover,
+.search-appearances:hover,
+.creator-mode-text:hover,
+.my-network-text:hover{
+    text-decoration: underline;
+    color: rgb(10, 102, 194);
+    font-weight: 500;
+}
+.youtube-job-duration1{
+    cursor:pointer;
+}
+.youtube-icon1{
+    cursor:text;
 }
 .left-part8{
     height: 180px;
@@ -406,18 +477,25 @@
     margin: 8px 0 0 204px;
     padding-bottom: 10px;
 }
+.below-activity-title1{
+    cursor:pointer;
+}
+
 .demonstrate-button{
     width: 166px;
     margin: 30px 0 0 400px;
     z-index: 100;
 }
+
 .endorsement-row{
     display: flex;
     flex-direction: row;
 }
 .endorsement{
     margin: 15px 0 0 10px;
+    cursor:pointer;
 }
+
 .all-text{
     height: 0;
     overflow: hidden;

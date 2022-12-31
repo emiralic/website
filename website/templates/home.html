@@ -7,26 +7,30 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='base1.css') }}">
 
 </head>
-<body>
+<body style="margin:0;
+  height:100%;
+  overflow:hidden;">
+
+
+
 
 {% extends "base.html"%}
 {% block content %}
-<div id="here"></div>
-<img class="back-image" id="my-image" src="static/index-background.jpg">
 
-<div  class="home-page-description">
-    djesi
+<p class="welcome1">
+    DOBRODOŠLI NA SVIJETLU STRANU!
+</p>
+<p class="welcome-description1">
+    Stranica je kreirana u svrhu prikazivanja usvojenog znanja iz područja programskog jezika Python-a, frameworka Flask, te HTML i CSS-a za izradu web stranica.
+    Na vrhu stranice možete pronaći CV, motivaciono pismo kreatora, te Linkedin profil i Youtube kanal koji su specijalno ručno kreirani pomoću HTML-a i CSS-a.
+    Cijeli projekat možete pronaći na github profilu, koji se nalazi među ličnim informacijama unutar motivacionog pisma.
+</p>
+<div id="here">
+    <img class="back-image" id="my-image" src="static/index-background.jpg">
+
 </div>
-<style>
-body{
-  margin:0;
-  height:100%;
-  overflow:hidden;
-
-}
 
 
-</style>
 
 
 {% endblock %}

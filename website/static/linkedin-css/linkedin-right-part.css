@@ -6,7 +6,7 @@
     height: 117px;
     width: 306px;
     background-color: white;
-    margin: 24px 0 0 24px;
+    margin: 74px 0 0 24px;
     border-radius: 10px;
     border: 1.5px solid;
     border-color: rgb(217, 217, 217);
@@ -46,14 +46,41 @@
     outline: none;
     background-color: rgb(102, 102, 102);
     align-items:center;
+    position: relative;
+
 }
-.question-mark-text,
-.question-mark-text1{
+.question-mark-sign,
+.question-mark-sign1{
     text-align: center;
     color: white;
     font-weight: 700;
     margin-left: -3px;
 
+
+}
+.question-mark .question-mark-text,
+.question-mark1 .question-mark-text{
+    position: absolute;
+    font-family: Roboto, Arial;
+    font-size: 13px;
+    font-weight: 400;
+    background-color: white;
+    border-radius: 4px;
+    color: black;
+    opacity:0;
+    padding: 18px 18px 18px 18px;
+    margin: 5px 0 0 -200px;
+    inline-size: 300px;
+    overflow-wrap: break-word;
+    text-align:justify;
+    z-index: 100;
+    border-radius: 15px;
+    pointer-events:none;
+
+}
+.question-mark:hover .question-mark-text,
+.question-mark1:hover .question-mark-text{
+    opacity:1;
 }
 .question-mark1{
     margin: 1px 0 0 30px;

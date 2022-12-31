@@ -1,13 +1,18 @@
 .home-videos-shorts{
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     align-items: center;
-    position:fixed;
     background-color: white;
-    width: 1519.2px;
+    width: 1330px;
+    margin: 170px 0 0 180px;
     z-index: 100;
+    position: fixed;
 
   }
+.home-videos-shorts-row{
+    display:flex;
+    flex-direction: row;
+}
 .underline{
     text-decoration: none;
     color: #0F0F0F;
@@ -30,8 +35,13 @@
 .search{
     width: 24px;
     height: 24px;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 5px;
+    padding: 13px 24px 0 24px;
     cursor:pointer;
   }
+.underline-gray{
+    background-color: rgb(191, 191, 191);
+    height: 0.7px;
+    z-index: 1;
+    margin: -5px -670px 0 -650px;
+    width: 1320px;
+}

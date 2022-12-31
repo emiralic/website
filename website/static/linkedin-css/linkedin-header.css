@@ -10,11 +10,17 @@ body{
     width: 100%;
     height: 53px;
     background-color: white;
+    position:fixed;
     z-index: 1000;
+}
+.back-home{
+    height: 34px;
+    margin: 12px 0 0 20px;
+    cursor:pointer;
 }
 .linkedin-logo{
     height: 42px;
-    margin: 6px 0 0 200px;
+    margin: 6px 0 0 180px;
     cursor: pointer;
 }
 .search-bar{
@@ -68,6 +74,7 @@ body{
     background-color: white;
     border:none;
     background-color: white;
+    cursor: pointer;
 }
 .home-logo{
     height: 25px;
@@ -88,6 +95,7 @@ body{
 .work-button{
     margin: 4.5px 0 0 30px;
 }
+
 .premium-text{
     font-family: Roboto, Arial;
     font-size: 12px;
@@ -95,7 +103,12 @@ body{
     text-decoration: underline;
     margin: 2px;
     padding-top: 2px;
+    max-width: 100px;
 }
+.premium-text:hover{
+    color: rgb(73, 45, 4);
+}
+
 .network-button1{
     display: flex;
     flex-direction: column;

@@ -1,24 +1,32 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='base1.css') }}">
 <link rel="preload" href="/static/background-image.jpg" as="image">
-
-
-{% extends "base.html"%}
-{% block content %}
-<div id="here"></div>
-<img class="back-image" id="my-image" src="static/background-image.jpg">
-
-<div  class="home-page-description">
-    djesi
-</div>
 <style>
 body{
   margin:0;
   height:100%;
   overflow:hidden;
-
 }
-
-
 </style>
+
+
+{% extends "base.html"%}
+{% block content %}
+
+<p class="welcome">
+    DOBRODOŠLI!
+</p>
+<p class="welcome-description">
+    Ukoliko želite pronaći više svjetlosti u
+    tmurnoj svakodnevnici, te također pristupiti
+    određenim stranicama kao što cu CV, Motivaciono
+    pismo, Linkedin profil, Youtube kanal, kreiranih pomoću
+    Python-a, HTML-a i CSS-a, koje su dostupne samo prijavljenim
+    korisnicima, molimo Vas da napravite profil i uspješno se prijavite.
+</p>
+<div id="here">
+    <img class="back-image" id="my-image" src="static/background-image.jpg">
+
+</div>
+
 
 {% endblock %}

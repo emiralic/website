@@ -2,6 +2,7 @@
 .back-image{
    height: 100%;
    width: 100%;
+   position: relative;
 
     }
 #here {
@@ -51,4 +52,35 @@
   100% {
     content: '@';
   }
+}
+.welcome,
+.welcome-description,
+.welcome1,
+.welcome-description1{
+    font-family: Roboto, Arial;
+    font-size: 45px;
+    color: white;
+    padding: 80px 0 0 590px;
+    position: absolute;
+    z-index: 100;
+    -webkit-text-fill-color: black;
+  -webkit-text-stroke: 0.5px;
+}
+.welcome-description,
+.welcome-description1{
+    padding: 200px 0 0 484px;
+    font-size: 22px;
+    text-align: justify;
+    line-height: 1.7;
+    width: 1020px;
+  -webkit-text-fill-color: rgb(179, 0, 0);
+  -webkit-text-stroke: 1px;
+
+}
+.welcome1{
+    padding: 150px 0 0 400px;
+}
+.welcome-description1{
+    padding: 250px 0 0 450px;
+    width: 1100px;
 }

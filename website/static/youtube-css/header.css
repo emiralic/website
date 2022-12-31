@@ -1,8 +1,16 @@
+.scroll-together{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+
+}
 .header{
       display:flex;
       flex-direction:row;
       width: 100%;
-      position:fixed;
+      position: fixed;
+      background:transparent;
       background-color: white;
       top:0;
       left:0;
@@ -10,6 +18,8 @@
       padding-top: 8px;
       border-bottom-width: 2px;
       z-index:100;
+
+
 }
 .hamburger-button{
     width: 40px;
@@ -26,16 +36,13 @@
 .youtube-logo{
     width: 90px;
     height: 20px;
-    padding-left: 12px;
-    padding-right: 16px;
-    padding-top: 8px;
     cursor:pointer;
+    padding: 8px 16px 0 12px;
 
 }
 .search-bar{
     height: 36px;
     width: 540px;
-    margin-top:0px;
     border-radius: 24px;
     border-color: rgb(192, 192, 192);
     border-style:solid;
@@ -66,7 +73,6 @@
     background-color: white;
     border-width: 1px;
     border-color: rgb(192, 192, 192);
-    margin-top:0px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border-style: solid;
@@ -96,9 +102,7 @@
 .search-image{
     width: 24px;
     height: 24px;
-    margin-right: 2px;
-    margin-top: 2px;
-    margin-left: 2px;
+    margin: 2px 2px 0 2px;
 }
 .speaker-button{
     width: 40px;
@@ -136,7 +140,7 @@ speaker-icon{
     width: 24px;
     height: 24px;
     padding: 8px 8px 8px 8px;
-    margin-left: 260px;
+    margin-left: 240px;
     cursor: pointer;
 
 }
@@ -156,4 +160,9 @@ speaker-icon{
     border-radius: 16px;
     cursor:pointer;
     margin-top: 4px;
+}
+.back-home{
+    height: 24px;
+    padding: 5px 0 0 10px;
+    cursor:pointer;
 }
