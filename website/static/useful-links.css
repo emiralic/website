@@ -8,19 +8,22 @@ body{
 }
 .links-title{
     font-family: Roboto, Arial;
-    font-size: 24px;
-    margin-top: 30px;
+    font-size: 30px;
+    margin-top: 50px;
     text-align: center;
-    color: rgb(43, 64, 85);
+    color: rgb(26, 26, 255);
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1.3px;
 }
 .links-columns{
-    margin-top:30px;;
+    margin-top:50px;
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(252, 246, 245);
     width: 600px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
+
 }
 .all-text,
 .all-text1{
@@ -78,14 +81,18 @@ input:checked ~ .all-text1{
    margin: 2px 0 0 20px;
    position:relative;
 }
-.video-time{
+.video-time,
+.video-time1{
     position:absolute;
     z-index:100;
     background-color:black;
     padding: 2px 2px 2px 2px;
     color: white;
     font-size: 10px;
-    margin: 60px 0 0 132px;
+    margin: 60px 0 0 117px;
+}
+.video-time1{
+    margin: 60px 0 0 125px;
 }
 .video-title{
     display: flex;
@@ -100,6 +107,7 @@ input:checked ~ .all-text1{
     color: gray;
     font-weight: 300;
 }
+
 .channel-name-photo{
     display:flex;
     flex-direction: row;
@@ -110,9 +118,29 @@ input:checked ~ .all-text1{
     border-radius: 8px;
 }
 .channel-name{
-    margin: 0 0 0 5px;
+    margin: -14px 0 0 20px;
 }
-.verified-icon{
+.verified-icon,
+.verified-icon1{
     height: 10px;
-    margin: 2px 0 0 5px;
+    margin: 4px 0 0 5px;
+    position: relative;
+}
+.verified-icon1{
+    margin: 3px 0 0 5px;
+}
+.verified-text{
+    font-size: 5px;
+    color: black;
+    margin: 3px 0 0 -10px;
+    opacity:0;
+}
+.verified-text:hover{
+    font-size: 12px;
+    margin: 0px 0 0 10px;
+    opacity: 1;
+    pointer-events:none;
+    padding: 2px 2px 2px 2px;
+    background-color: rgb(204, 204, 204);
+    color: white;
 }
