@@ -31,3 +31,8 @@ def cv():
 @login_required
 def linkedin():
     return render_template ('linkedin.html', korisnik=current_user)
+
+@views.route('korisni-linkovi')
+@login_required
+def korisni_linkovi():
+    return render_template('useful-links.html', korisnik=current_user)

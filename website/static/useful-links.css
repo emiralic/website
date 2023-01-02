@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*{
+    font-family: Roboto, Arial;
+}
+body{
+    background-color: rgb(254, 242, 128);
+
+}
+.links-title{
+    font-family: Roboto, Arial;
+    font-size: 24px;
+    margin-top: 30px;
+    text-align: center;
+    color: rgb(43, 64, 85);
+}
+.links-columns{
+    margin-top:30px;;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(252, 246, 245);
+    width: 600px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+.all-text,
+.all-text1{
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+input{
+    display:none;
+
+}
+label{
+    font-size: 24px;
+    font-weight: 400;
+    display: block;
+    cursor: pointer;
+    color: rgb(66, 66, 66);
+    position: relative;
+    padding: 20px 0 10px 80px;
+    user-select: none;
+
+
+}
+label:before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent
+    transparent transparent black;
+    height: 0;
+    font-size: 0;
+    position: absolute;
+    margin: 4px 0 0 -25px;
+    transition transform 0.5s;
+    transition-origin: 3px center;
+}
+input:checked ~ label:before{
+    transform: rotate(90deg);
+
+}
+input:checked ~ .all-text,
+input:checked ~ .all-text1{
+    opacity: 1;
+    height: auto;
+
+}
+.inside-box{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.images{
+   height: 80px;
+   border-radius: 10px;
+   margin: 2px 0 0 20px;
+   position:relative;
+}
+.video-time{
+    position:absolute;
+    z-index:100;
+    background-color:black;
+    padding: 2px 2px 2px 2px;
+    color: white;
+    font-size: 10px;
+    margin: 60px 0 0 132px;
+}
+.video-title{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 20px;
+    max-width: 450px;
+}
+.views-and-time,
+.channel-name{
+    font-size: 12px;
+    margin-top: 3px;
+    color: gray;
+    font-weight: 300;
+}
+.channel-name-photo{
+    display:flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+.channel-logo{
+    height: 15px;
+    border-radius: 8px;
+}
+.channel-name{
+    margin: 0 0 0 5px;
+}
+.verified-icon{
+    height: 10px;
+    margin: 2px 0 0 5px;
+}
